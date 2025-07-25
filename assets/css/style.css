@@ -1,0 +1,92 @@
+:root {
+  --color-fondo: #4d65dc;
+  --color-claro: #FAFAFA;
+  --color-oscuro: #333333;
+  --color-tarjeta: #f8f9b4dd;
+  --color-botones: #004259;
+  --color-detalles: #82D0D8;
+}
+
+body {
+  background-color: var(--color-fondo);
+  padding: 2rem;
+}
+
+.icono-todo {
+  width: 100px;
+}
+
+hr {
+  /* color: #82D0D8; */
+  border: 2px solid var(--color-detalles);
+}
+
+.card {
+  border: 2px solid var(--color-detalles);
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 1rem; */
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.estado-tarea {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconos i {
+  color: var(--color-botones);
+  font-size: 1.25rem;
+}
+
+.iconos i:hover {
+  color: var(--color-detalles);
+}
+
+#nueva-tarea {
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: 2px solid var(--color-detalles);
+}
+
+#nueva-tarea::placeholder {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#boton-agregar-tarea {
+  background-color: var(--color-botones);
+  /* border: 2px solid var(--color-detalles); */
+  border: none;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+#boton-agregar-tarea:hover {
+  background-color: var(--color-detalles);
+  /* border: 2px solid var(--color-botones); */
+}
+
+
+/* form-check-input:checked {
+  background-color: var(--color-botones);
+} */
+
+/* .footer {
+  position: sticky;
+  bottom: 0;
+} */
