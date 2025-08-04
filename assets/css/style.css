@@ -17,19 +17,23 @@ body {
 }
 
 hr {
-  /* color: #82D0D8; */
   border: 2px solid var(--color-detalles);
 }
 
 .card {
   border: 2px solid var(--color-detalles);
+  color: var(--color-oscuro);
 }
 
 .card-body {
+  padding-bottom: 0.5rem;
+}
+
+.contenido-tarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 1rem; */
+  padding: 0 1rem;
 }
 
 h2 {
@@ -40,12 +44,14 @@ h2 {
   display: flex;
   align-items: center;
   gap: 1rem;
+  overflow: hidden;
+  margin-right: 1rem;
 }
 
 .iconos {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .iconos i {
@@ -55,6 +61,21 @@ h2 {
 
 .iconos i:hover {
   color: var(--color-detalles);
+}
+
+.detalles-tarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 1rem;
+}
+
+.detalle-etiqueta {
+  font-weight: 600;
+}
+
+.detalle-valor {
+  font-weight: 400;
 }
 
 #nueva-tarea {
@@ -70,23 +91,47 @@ h2 {
 
 #boton-agregar-tarea {
   background-color: var(--color-botones);
-  /* border: 2px solid var(--color-detalles); */
   border: none;
-  padding: 1rem;
+  padding: 1rem 2rem; 
   font-weight: 600;
 }
 
 #boton-agregar-tarea:hover {
   background-color: var(--color-detalles);
-  /* border: 2px solid var(--color-botones); */
 }
 
+.form-check-input {
+  border: 2px solid var(--color-detalles);
+}
 
-/* form-check-input:checked {
+.form-check-input:checked {
   background-color: var(--color-botones);
-} */
+  border: 2px solid var(--color-detalles);
+}
 
-/* .footer {
-  position: sticky;
-  bottom: 0;
-} */
+.invalid {
+  margin-top: 1rem;
+}
+
+.finalizada {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 4rem;
+  }
+
+  .contenido-tarea {
+    padding: 1rem;
+  }
+
+  .detalles-tarea {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+  }
+  
+}
