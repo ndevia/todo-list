@@ -14,31 +14,40 @@
     <title>To-Do List</title>
 	</head>
 	<body>
+    <!-- Header -->
     <header class="header text-center">
-      <div class="container">
+      <div class="container container-input">
         <h1 class="fw-bold">To-Do List</h1>
-        <img class="icono-todo" src="assets/img/todo-512.webp" alt="imagen lista tareas">
-        <div class="input-group my-4">
-          <input type="text" class="form-control " placeholder="Nueva Tarea" aria-label="Nueva Tarea" aria-describedby="boton-agregar-tarea" id="nueva-tarea" required>
-          <button class="btn btn-primary" type="button" id="boton-agregar-tarea">Agregar</button>
+        <img class="icono-todo mt-3" src="assets/img/todo-512.webp" alt="imagen lista tareas">
+        <!-- Input agregar tareas -->
+        <div class="input-group mt-5 col-sm-12 col-lg-10 mx-auto">
+          <input type="text" class="form-control" placeholder="Nueva Tarea" aria-label="Nueva Tarea" aria-describedby="boton-agregar-tarea" id="nueva-tarea" required>
+          <button class="btn btn-primary" type="submit" id="boton-agregar-tarea">Agregar</button>
         </div>
       </div>
-      
     </header>
+    <!-- Main -->
     <main class="main">
-      <hr>
-      <div class="container">
-        <div class="card mb-4">
+      <hr class="my-5">
+      <div class="container container-tareas">
+        <!-- <div class="card mb-4 col-sm-12 col-lg-10 mx-auto">
           <div class="card-body">
-            <div class="estado-tarea">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox">
+            <div class="contenido-tarea py-3">
+              <div class="estado-tarea">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                </div>
+                <h2>Tarea 1</h2>
               </div>
-              <h2>Tarea 1</h2>
+              <div class="iconos">
+                <i class="fa-solid fa-pencil icono editar"></i>
+                <i class="fa-solid fa-trash icono borrar"></i>
+              </div>
             </div>
-            <div class="iconos">
-              <i class="fa-solid fa-pencil icono editar"></i>
-              <i class="fa-solid fa-trash icono borrar"></i>
+            <div class="detalles-tarea">
+              <p class="detalle-etiqueta">Creacion: <span class="detalle-valor">02/08/2025, 13:03:15</span></p>
+              <p class="detalle-etiqueta">Modificacion: <span class="detalle-valor">02/08/2025, 13:03:15</span></p>
+              <p class="detalle-etiqueta">Estado: <span class="detalle-valor">pendiente</span></p>
             </div>
           </div>
         </div>
@@ -54,8 +63,8 @@
               <i class="fa-solid fa-pencil icono editar"></i>
               <i class="fa-solid fa-trash icono borrar"></i>
             </div>
-          </div>
-        </div>
+          </div> -->
+      </div>
     </main>
     <!-- <footer class="footer">
       <hr>

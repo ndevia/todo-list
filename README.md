@@ -115,6 +115,7 @@ Nuestros sitios, pueden ser dinámicos en lugar de estáticos y al ser interacti
   - Manipulación del DOM.
   - Interacción con el usuario.
   - Obtención de datos del usuario que podrían servir, por ejemplo, para tomar una hora médica.  
+  - En este proyecto en particular, las tareas son creadas de manera dinámica utilizando, mediante JavaScript y la eliminación de tareas también es posible gracias a su uso.
 
 #### 2. Explicación clara sobre cómo JavaScript facilita la interacción y manipulación del DOM, así como el control de flujo y estructura de datos.
 JavaScript permite controlar el flujo del código mediante condicionales, ciclos y funciones, lo que permiten ordenar el código y reutilizarlo. También se ayuda de estructuras como variables, arreglos y objetos, que permiten trabajar fácilmente con datos.
@@ -139,4 +140,5 @@ Este proyecto fue desplegado en GitHub Pages y se puede visitar en el siguiente 
 ## 📄 Notas:
 - Para las fechas de creación y modificación de las tareas se utiliza `new Date().toLocaleString("en-GB")`, para obtener el formato deseado, ya que el método `.toLocaleString()` entrega tanto la fecha como la hora actual y el parámetro `"en-GB"` corresponde a la región "British English", que usa un formato de día-mes-año para las fechas y de 24 horas sin AM/PM para los horarios. 
 - Las preguntas teóricas fueron respondidas en la sección **Respuestas** del archivo `README.md`.
+- Para los `id` de las tareas, se utilizaron números enteros correlativos, ya que no me hacía mucho sentido utilizar números aletorios que tienen la posibilidad de repetirse.
 - Por complejidad, algunas funcionalidades no fueron implementadas y se detallan en la sección **Mejoras futuras**.
